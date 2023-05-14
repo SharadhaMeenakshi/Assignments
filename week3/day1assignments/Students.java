@@ -9,7 +9,7 @@ public class Students {
         System.out.println("Student Information (ID & Name): " + id + ", " + name);
     }
 
-    public void getStudentInfo(String email, String phoneNumber) {
+    public void getStudentInfo(String email, long phoneNumber) {
         System.out.println("Student Information (Email & Phone Number): " + email + ", " + phoneNumber);
     }
     
@@ -20,7 +20,7 @@ public class Students {
             
             students.getStudentInfo(123);                                 // Calling with Rollno only
             students.getStudentInfo(456, "Shara");                         // Calling with ID and Name
-            students.getStudentInfo("shara@example.com", "1234567890");
+            students.getStudentInfo("shara@example.com", 1234567890l);
 }}
 /*
 Class: Students
